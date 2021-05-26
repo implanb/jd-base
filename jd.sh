@@ -36,13 +36,13 @@ function Detect_Cron {
 
 ## 获取用户数量 UserSum
 function Count_UserSum {
-  for ((i=1; i<=12; i++)); do
+  for ((i=1; i<=25; i++)); do
     Tmp=Cookie$i
     CookieTmp=${!Tmp}
     [[ ${CookieTmp} ]] && UserSum=$i || break
   done
 
-  for ((d=13; d<=1000; d++)); do
+  for ((d=26; d<=1000; d++)); do
     Del=Cookie$d
     sed -i "/${!Del}/d" ${FileConf} || break
   done
@@ -85,6 +85,9 @@ function Combin_All {
   export JDSGMH_SHARECODES=$(Combin_Sub ForOtherSgmh)
   export JDCFD_SHARECODES=$(Combin_Sub ForOtherCfd)
   export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherGlobal)
+  export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth)
+  export CITY_SHARECODES=$(Combin_Sub ForOtherCity)
+  export JD818_SHARECODES=$(Combin_Sub ForOtherCarni)
 }
 
 
