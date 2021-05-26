@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 LABEL maintainer="RikudouPatrickstar"
-ARG JD_BASE_URL=https://github.com/RikudouPatrickstar/jd-base
-ARG JD_BASE_BRANCH=v3
+ARG JD_BASE_URL=https://github.com/implanb/jd-base
+ARG JD_BASE_BRANCH=master
 ARG JD_SCRIPTS_URL=https://github.com/RikudouPatrickstar/jd_scripts
 ARG JD_SCRIPTS_BRANCH=master
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
