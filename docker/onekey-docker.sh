@@ -18,7 +18,7 @@ echo "
 "
 echo -e "\e[31m警告：请勿将本项目用于任何商业用途！\n\e[0m"
 
-DockerImage="implanb/jd-base"
+DockerImage="implanb/jd-base:v1"
 ShellName=$0
 ShellDir=$(cd "$(dirname "$0")";pwd)
 ContainerName=""
