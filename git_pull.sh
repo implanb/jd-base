@@ -87,13 +87,13 @@ function Chmod_ShellScripts {
 
 ## 获取用户数量 UserSum
 function Count_UserSum {
-  for ((i=1; i<=12; i++)); do
+  for ((i=1; i<=25; i++)); do
     Tmp=Cookie$i
     CookieTmp=${!Tmp}
     [[ ${CookieTmp} ]] && UserSum=$i || break
   done
 
-  for ((d=13; d<=1000; d++)); do
+  for ((d=26; d<=1000; d++)); do
     Del=Cookie$d
     sed -i "/${!Del}/d" ${FileConf} || break
   done
