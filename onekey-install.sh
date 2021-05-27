@@ -35,7 +35,7 @@ fi
 
 echo -e "\n\e[32m1. 获取源码\e[0m"
 [ -d ${JdDir} ] && mv ${JdDir} ${JdDir}.bak && echo "检测到已有 ${JdDir} 目录，已备份为 ${JdDir}.bak"
-git clone -b v3 https://github.com.cnpmjs.org/RikudouPatrickstar/jd-base ${JdDir}
+git clone -b v3 https://github.com.cnpmjs.org/implanb/jd-base ${JdDir}
 
 echo -e "\n\e[32m2.1 如果有用于存放配置文件的远程 Git 仓库，请输入地址，否则直接回车:\e[0m"
 read remote_config
@@ -68,7 +68,7 @@ cd ${ShellDir}
 echo -e "\e[32m请访问 http://<ip>:5678 进行配置\e[0m"
 echo -e "\e[32m初始用户名：admin，初始密码：password\e[0m"
 
-echo -e "\n更多关于控制面板的信息请访问：\n http://github.com/RikudouPatrickstar/jd-base#%E4%BA%94web-%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E \n"
+echo -e "\n更多关于控制面板的信息请访问：\n http://github.com/implanb/jd-base \n"
 
 echo -e "\e[33m注意：原有定时任务已备份在 ${JdDir}/old_crontab \e[0m"
 rm -f ${ShellDir}/${ShellName}
